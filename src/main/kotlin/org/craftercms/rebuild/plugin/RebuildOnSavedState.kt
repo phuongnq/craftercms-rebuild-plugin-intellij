@@ -14,7 +14,7 @@ import com.intellij.util.xmlb.XmlSerializerUtil
 )
 class RebuildOnSavedState : PersistentStateComponent<RebuildOnSavedState> {
     var enabled = false
-    var rebuildUrl = "http://localhost:8080/api/1/site/context/rebuild.json?token=defaultManagementToken&crafterSite=default"
+    var rebuildUrl = "http://localhost:8080/api/1/site/context/rebuild_all.json?token=defaultManagementToken"
 
     override fun getState() = this
 
